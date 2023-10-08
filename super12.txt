@@ -1,0 +1,10 @@
+pow=1
+echo "Enter number(m): "
+read m
+echo "Enter power(n): "
+read n
+for((i=1;i<=n;i++))
+do
+pow=`expr $pow \* $m `
+done
+echo "$m^$n = $pow"
